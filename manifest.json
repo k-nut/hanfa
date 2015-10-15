@@ -1,0 +1,20 @@
+{
+  "bot_id": "hanfa",
+  "title": "Finance Licences (Various) - Croatian Financial Services Supervisory Agency",
+  "description": "Bot for opencorporates mission 689",
+  "language": "python",
+  "data_type": "primary data",
+  "identifying_fields": [
+    "Name"
+  ],
+  "files": [
+    "scraper.py"
+  ],
+  "frequency": "monthly",
+  "publisher": {
+    "name": "HANFA Croatian Financial Services Supervisory Agency",
+    "url": "http://www.hanfa.hr/registar/2?&page=1",
+    "terms": "n/a",
+    "terms_url": "n/a"
+  }
+}
