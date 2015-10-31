@@ -34,6 +34,7 @@ def parse_page(url):
     for i, link in enumerate(links):
         data = extract_details(contents[i])
         data["Name"] = link.text.strip()
+        data['OID'] = link.parent.parent.findAll("span")[-2].text.replace('OIB', '').strip()
         data["source_url"] = URL
         data["sample_date"] = datetime.datetime.now().isoformat()
 

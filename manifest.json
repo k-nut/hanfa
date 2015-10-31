@@ -8,8 +8,14 @@
     "Name"
   ],
   "files": [
-    "scraper.py"
+    "scraper.py",
+    "transformer.py"
   ],
+  "transformers": [{
+        "file":  "transformer.py",
+         "data_type": "simple-licence",
+         "identifying_fields": ["licence_number"]
+  }],
   "frequency": "monthly",
   "publisher": {
     "name": "HANFA Croatian Financial Services Supervisory Agency",
