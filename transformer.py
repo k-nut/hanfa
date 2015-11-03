@@ -12,8 +12,7 @@ while True:
     "company_jurisdiction": 'Croatia',
     "source_url": raw_record['source_url'],
     "sample_date": raw_record['sample_date'],
-    "licence_number": raw_record['OID'],
-    "jurisdiction_classification": 'Bank',
+    "jurisdiction_classification": 'Investment Firm',
     "category": 'Financial',
     "confidence": 'HIGH',
   }
