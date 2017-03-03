@@ -50,7 +50,8 @@ def extract_details(part):
 
     saved["Address"] = " ".join(details_1[0].text.split(" ")[1:])
     saved["Phone"] = " ".join(details_1[1].text.split(" ")[1:])
-    saved["Website"] = " ".join(details_1[2].text.split(" ")[1:])
+    if len(details_1) > 2:
+        saved["Website"] = " ".join(details_1[2].text.split(" ")[1:])
     if len(details_1) > 3:
         saved["BIC"] = details_1[3].text
     activities =  details_2[0].text.split(", ")
